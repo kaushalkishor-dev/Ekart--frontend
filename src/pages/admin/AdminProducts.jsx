@@ -102,7 +102,7 @@ const AdminProducts = () => {
 
     try {
       const res = await axios.put(
-        `http://localhost:8000/api/v1/product/update/${editProduct._id}`,
+        `https://ekart-backend-yag4.onrender.com/api/v1/product/update/${editProduct._id}`,
         formData,
         {
           headers: {
@@ -128,7 +128,7 @@ const AdminProducts = () => {
       dispatch(setProducts(products.filter((p) => p._id !== productId)));
       toast.success("Product deleted");
       await axios.delete(
-        `http://localhost:8000/api/v1/product/delete/${productId}`,
+        `https://ekart-backend-yag4.onrender.com/api/v1/product/delete/${productId}`,
         {
           headers: {
             Authorization: `Bearer ${accessToken}`,

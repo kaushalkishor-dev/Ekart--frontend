@@ -21,7 +21,7 @@ const Cart = () => {
   const tax = subTotal * 0.05; // 5% tax
   const total = subTotal + shipping + tax;
 
-  const API = "http://localhost:8000/api/v1/cart";
+  const API = "https://ekart-backend-yag4.onrender.com/api/v1/cart";
   const accessToken = localStorage.getItem("accessToken");
 
   const handleUpdateQuantity = async (productId, type) => {

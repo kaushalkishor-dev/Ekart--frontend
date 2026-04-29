@@ -43,7 +43,7 @@ const Login = () => {
     console.log(formData);
     try {
       setLoading(true);
-      const res = await axios.post(`http://localhost:8000/api/v1/user/login`,formData,{
+      const res = await axios.post(`https://ekart-backend-yag4.onrender.com/api/v1/user/login`,formData,{
       headers:{
         "Content-Type":"application/json"
       }

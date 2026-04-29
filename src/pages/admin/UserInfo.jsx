@@ -78,7 +78,7 @@ const UserInfo = () => {
   const getUserDetails = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:8000/api/v1/user/get-user/${userId}`,
+        `https://ekart-backend-yag4.onrender.com/api/v1/user/get-user/${userId}`,
         {
           headers: {
             Authorization: `Bearer ${accessToken}`,
